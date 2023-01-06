@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <style>
+        .err {
+            background-color: rgba(185, 21, 21, 0.719);
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+            max-width: 800px;
+            min-width: 300px;
+            color: white;
+            padding: 20px;
+            opacity: 1;
+        }
+
+        .err.success {
+            background-color: rgba(59, 187, 42, 0.75);
+            max-width: 800px;
+            min-width: 300px;
+        }
+        .err.info {
+            background-color: rgba(0, 174, 255, 0.75);
+            max-width: 800px;
+            min-width: 300px;
+        }
+        .err.warning {
+            background-color: rgba(255, 153, 0, 0.75);
+            max-width: 800px;
+            min-width: 300px;
+        }
+
+        .closebtn {
+            line-height: 20px;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            font-size: 22px;
+            color: white;
+            float: right;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+        </style>
+    </head>
+    <body style="word-wrap: break-word;">
+        <div style="position: absolute;">
+            <div class="err">
+                <span class="closebtn">×</span>  
+                .
+            </div>
+            <div class="err">
+                <span class="closebtn">×</span>  
+                <strong>Ошибка</strong> это уведомление об опасности
+            </div>
+
+            <div class="err success">
+                <span class="closebtn">×</span>  
+                <strong>Успешно</strong> это уведомление об успешном выполнении
+            </div>
+
+            <div class="err info">
+                <span class="closebtn">×</span>  
+                <strong>Инфо</strong> это уведомление об информации
+            </div>
+
+            <div class="err warning">
+                <span class="closebtn">×</span>  
+                <strong>Предупреждение</strong> это уведомление об предупреждение опасности
+            </div>
+            <div class="err warning">
+                <span class="closebtn">×</span>  
+                цшыудрваюодрарварвоарвоаровоаврарвроаровоаровраовраоврарвораовоарвоарвраовраровравоаровраовроацшыудрваюодрарварвоарвоаровоаврарвроаровоаровраовраоврарвораовоарвоарвраовраровравоаровраовроа
+            </div>
+        </div>
+
+        <h2>Шаблон сообщений</h2>
+        <p>Жми "x" символ чтобы убрать сообщение</p>
+
+        <script>
+        let close = document.getElementsByClassName("closebtn");
+
+        for (let i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(() => div.style.display = "none", 600);
+            }
+        }
+        </script>
+    </body>
+</html>

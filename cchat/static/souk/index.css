@@ -1,0 +1,131 @@
+/*body, html {
+    height: 100%
+}
+body {
+    background-color: #123451;
+    min-width: 1100px;
+    min-height: 687px;
+    color: #ffffff;
+}*/
+
+body {
+    background-color: #123451;
+    word-wrap: break-word;
+    color: white;
+}
+textarea:focus, input:focus {outline: none;}
+@media only screen and (max-width: 480px) {}
+
+#display{
+    position: absolute;
+    margin: 0 auto;
+    height: 867px;
+    width: 1100px;
+}
+.chat{
+    /*background-color: #333;*/
+    position: relative;
+    height: 650px;
+    width: 783px;
+    float: left;
+}
+#about{
+    /*background-color: #333;*/
+    text-align: center;
+    position: relative;
+    height: 650px;
+    width: 300px;
+    float: right;
+}
+#inputchat{
+    /*background-color: #333;*/
+    position: relative;
+    margin-top: 667px;
+    height: 200px;
+    width: 1100px;
+}
+
+.chatOut {
+    background: #123451;
+    color: #ffffff;
+    height: 650px;
+    width: 783px;
+    resize: none;
+    padding: 0;
+    border: 0;
+}
+.chatInput {
+    background: #0d273d;
+    /*border-radius: 20px;*/
+    margin-left: 10px;
+    color: #ffffff;
+    width: 1081px;
+    height: 160px;
+    resize: none;
+    border: 0;
+}
+
+.smoot>div:nth-child(1) {animation: ani 0.5s ease-in-out forwards;}
+.smoot>div:nth-child(2) {animation: ani 0.5s forwards 0.5s;}
+.smoot>div:nth-child(3) {animation: ani 0.5s forwards 1s;}
+.smoot>div:nth-child(4) {animation: ani 0.5s forwards 1.5s;}
+.smoot>div:nth-child(5) {animation: ani 0.5s forwards 2s;}
+
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    15% {transform: translateX(10%);}
+    30% {transform: translateX(-10%);}
+    45% {transform: translateX(5%);}
+    60% {transform: translateX(-5%);}
+    75% {transform: translateX(3%);}
+    85% {transform: translateX(-3%);}
+    100% {transform: translateX(0);}
+}
+
+.smoot2>div:nth-child(1) {animation: ani2 0.4s ease-in-out forwards;}
+.smoot2>div:nth-child(2) {animation: ani2 0.5s forwards 0.5s;}
+.smoot2>div:nth-child(3) {animation: ani2 0.5s forwards 1s;}
+.smoot2>div:nth-child(4) {animation: ani2 0.5s forwards 1.5s;}
+.smoot2>div:nth-child(5) {animation: ani2 0.5s forwards 2s;}
+
+@keyframes ani2 {
+    1% {transform: translateX(0%);}
+    4% {transform: translateX(10%);}
+    8% {transform: translateX(20%);}
+    12% {transform: translateX(30%);}
+    16% {transform: translateX(40%);}
+    20% {transform: translateX(50%);}
+    24% {transform: translateX(40%);}
+    28% {transform: translateX(30%);}
+    32% {transform: translateX(20%);}
+    36% {transform: translateX(10%);}
+    40% {transform: translateX(0%);}
+    44% {transform: translateX(-10%);}
+    48% {transform: translateX(-20%);}
+    52% {transform: translateX(-30%);}
+    56% {transform: translateX(-40%);}
+    60% {transform: translateX(-50%);}
+    64% {transform: translateX(-60%);}
+    68% {transform: translateX(-70%);}
+    72% {transform: translateX(-80%);}
+    76% {transform: translateX(-90%);}
+    80% {transform: translateX(-100%);}
+    84% {transform: translateX(-110%);}
+    88% {transform: translateX(-120%);}
+    92% {transform: translateX(-130%);}
+    96% {transform: translateX(-140%);}
+    100% {transform: translateX(-150%);}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
